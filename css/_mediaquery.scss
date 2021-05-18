@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        width: 1200px;
+        height: 630px;
+        display: grid;
+        grid-auto-columns: 23%;
+        grid-template-areas: 
+            "purple purple gray whitelarge"
+            "white dark dark whitelarge";
+    }
+    
+    .purple { grid-area: purple; }
+    .gray { grid-area: gray; }
+    .whitelarge { grid-area: whitelarge; }
+    .white { grid-area: white; }
+    .dark { grid-area: dark; }
+
+    .card__body {
+
+        &__title {
+            font-size: 21px;
+        }
+    }
+
+    .card__purple {
+        background-position: top right 5.5rem;
+    }
+}

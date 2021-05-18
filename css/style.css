@@ -1,0 +1,213 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+  height: 100%;
+}
+
+.container {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1.7rem;
+  grid-gap: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.ff__light {
+  color: #cfcfcf;
+}
+
+.ff__dark {
+  color: #19212e;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 1.5rem;
+  -webkit-box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card__head__img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.card__head__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__head__info__name {
+  margin: 0;
+  font-size: 13px;
+}
+
+.card__head__info__position {
+  margin: 0;
+  opacity: .5;
+  font-size: 12px;
+}
+
+.card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__body__title {
+  font-size: 20.4px;
+}
+
+.card__body__text {
+  margin-right: 1.15rem;
+  opacity: .7;
+  margin-top: 0;
+}
+
+.card__purple {
+  background-color: #7541c8;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 1.5rem;
+}
+
+.card__purple img {
+  border: 1.5px solid #ecf2f8;
+}
+
+.card__gray {
+  background-color: #48556a;
+}
+
+.card__gray img {
+  border: 1.5px solid #ecf2f8;
+}
+
+.card__white {
+  background-color: white;
+}
+
+.card__white img {
+  border: 1.5px solid white;
+}
+
+.card__darkblue {
+  background-color: #19212e;
+}
+
+.card__darkblue img {
+  border: 1.5px solid #7541c8;
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    width: 1200px;
+    height: 630px;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 23%;
+        grid-template-areas: "purple purple gray whitelarge" "white dark dark whitelarge";
+  }
+  .purple {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: purple;
+  }
+  .gray {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: gray;
+  }
+  .whitelarge {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: whitelarge;
+  }
+  .white {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: white;
+  }
+  .dark {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: dark;
+  }
+  .card__body__title {
+    font-size: 21px;
+  }
+  .card__purple {
+    background-position: top right 5.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

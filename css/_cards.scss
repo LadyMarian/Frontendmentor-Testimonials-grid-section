@@ -1,0 +1,97 @@
+.ff__light {
+    color: $LightGray;
+}
+
+.ff__dark {
+    color: $VeryDarkBlackishBlue;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 20px 20px 40px rgba(0,0,0,.15);
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        &__img {
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            height: 30px;
+            justify-content: space-between;
+
+            &__name {
+                margin: 0;
+                font-size: 13px;
+            }
+
+            &__position {
+                margin: 0;
+                opacity: .5;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 20.4px;
+        }
+
+        &__text {
+            margin-right: 1.15rem;
+            opacity: .7;
+            margin-top: 0;
+        }
+    }
+
+    &__purple {
+        background-color: $ModerateViolet;
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top right 1.5rem;
+
+        & img {
+            border: 1.5px solid $LightGrayishBlue;
+        }
+    }
+
+    &__gray {
+        background-color: $VeryDarkGrayishBlue;
+
+        & img {
+            border: 1.5px solid $LightGrayishBlue;
+        }
+    }
+
+    &__white {
+        background-color: $White;
+
+        & img {
+            border: 1.5px solid $White;
+        }
+    }
+
+    &__darkblue {
+        background-color: $VeryDarkBlackishBlue;
+
+        & img {
+            border: 1.5px solid $ModerateViolet;
+        }
+    }
+
+    // & + .card {
+    //     margin-top: 1.5rem;
+    // }
+}
